@@ -12,6 +12,13 @@ android {
         vectorDrawables.useSupportLibrary= true
     }
     buildTypes {
+
+        debug {
+            buildConfigField "String", "BASE_API_URL", "\"https://api.spacexdata.com/v2\""
+            minifyEnabled false
+            debuggable true
+        }
+
         release {
             buildConfigField "String", "BASE_API_URL", "\"https://api.spacexdata.com/v2\""
             minifyEnabled true
