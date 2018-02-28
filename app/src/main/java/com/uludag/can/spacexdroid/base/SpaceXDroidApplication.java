@@ -13,7 +13,7 @@ public class SpaceXDroidApplication extends Application {
         mApplicationComponent = DaggerApplicationComponent.create();
     }
 
-    public ApplicationComponent getApplicationComponent(Context context) {
+    public static ApplicationComponent getApplicationComponent(Context context) {
         return ((SpaceXDroidApplication) context.getApplicationContext()).mApplicationComponent;
     }
 }

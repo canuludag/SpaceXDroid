@@ -7,7 +7,8 @@
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_view_rockets"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        tools:listitem="@layout/rockets_list_item"/>
 
     <TextView
         android:id="@+id/tv_rockets_error"

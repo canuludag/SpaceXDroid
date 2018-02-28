@@ -10,12 +10,12 @@ import retrofit2.http.GET;
 
 public interface ApiService {
 
-    @GET("/rockets")
+    @GET("rockets")
     Call<List<Rocket>> getRockets();
 
-    @GET("/launches")
+    @GET("launches")
     Call<List<Launch>> getLaunches();
 
-    @GET("/launches/upcoming")
+    @GET("launches/upcoming")
     Call<List<Launch>> getUpcomingLaunches();
 }

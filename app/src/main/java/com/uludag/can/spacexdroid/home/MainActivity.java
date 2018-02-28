@@ -8,6 +8,7 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 import com.uludag.can.spacexdroid.R;
+import com.uludag.can.spacexdroid.home.rockets.RocketsFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,6 +16,9 @@ public class MainActivity extends AppCompatActivity {
             = item -> {
                 switch (item.getItemId()) {
                     case R.id.navigation_rockets:
+                        getSupportFragmentManager().beginTransaction()
+                                .add(R.id.screen_container, new RocketsFragment())
+                                .commit();
                         return true;
                     case R.id.navigation_launches:
                         return true;
@@ -31,6 +35,10 @@ public class MainActivity extends AppCompatActivity {
 
         BottomNavigationView navigation = findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+
+        getSupportFragmentManager().beginTransaction()
+                .add(R.id.screen_container, new RocketsFragment())
+                .commit();
     }
 
 }

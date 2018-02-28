@@ -3,4 +3,6 @@
     <string name="bottom_nav_title_rockets">Rockets</string>
     <string name="bottom_nav_title_launches">Launches</string>
     <string name="bottom_nav_title_upcomings">Up Comings</string>
+
+    <string name="api_error_rockets">Error loading rockets</string>
 </resources>
